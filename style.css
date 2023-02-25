@@ -310,9 +310,7 @@ nav ul li a:hover {
     text-align: center;
     color: #575757;
 }
-.services {
-    padding: 20px;
-}
+
 
 .services .services-content {
     display: grid;
@@ -360,11 +358,14 @@ nav ul li a:hover {
 .services .services-content .srv .text {
 max-width: 100%;
 text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 .services .services-content .srv p {
 max-width: 80%;
 text-align: center;
-margin-right: 30px;
 }
 }
 
@@ -596,7 +597,6 @@ margin-bottom: 30px;
 }
 .footer .container {
   display: grid;
-  padding-right: 40px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 40px;
 }
@@ -609,6 +609,10 @@ margin-bottom: 30px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+.footer .box .text{
+  max-width: 80%;
+  margin: 10px auto;
 }
 .footer .box .social {
   display: flex;
